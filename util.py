@@ -33,5 +33,5 @@ def rinput(msg,valuetype):
                 return float(inp)
             print("Input was not valid. Try again!")
     else:
-        print("Wrong 'valuetype'. Use 'STR' or 'INT'")
+        print("Wrong 'valuetype'. Use 'STR','INT' or 'FLOAT'")
 
