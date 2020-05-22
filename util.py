@@ -35,3 +35,15 @@ def rinput(msg,valuetype):
     else:
         print("Wrong 'valuetype'. Use 'STR','INT' or 'FLOAT'")
 
+def optionmenue(titel,*args,prefix=">"):
+    if titel != "":
+        print(titel)
+    i = 1
+    for arg in args:
+        print("[{}] {}".format(i,arg))
+        i+=1
+    print("Please enter your number of choice:")
+    while True:
+        choice = rinput(prefix,INT)
+        if choice >= 1 and choice <= (i-1):
+            return choice
